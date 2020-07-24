@@ -40,8 +40,8 @@ const sections = [
 const Directory = () => {
   return (
     <div className="directory-menu">
-      {sections.map(({ title, imageUrl, id, size }) => (
-        <MenuItem title={title} imageUrl={imageUrl} key={id} size={size} />
+      {sections.map(({ id, ...rest }) => (
+        <MenuItem key={id} {...rest} />
       ))}
     </div>
   )
