@@ -1,6 +1,6 @@
-import {SET_CURRENT_USER} from "./user.reducer";
+import { SET_CURRENT_USER } from './user.actionTypes'
 
 export const setCurrentUser = user => ({
   type: SET_CURRENT_USER,
-  payload: user
+  payload: user,
 })
