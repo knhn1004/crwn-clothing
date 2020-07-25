@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux'
 import { addItem } from '../../redux/cart/cart.actions'
 
 const CollectionItem = ({ item }) => {
-  const { id, name, price, imageUrl } = item
+  const { name, price, imageUrl } = item
   const dispatch = useDispatch()
 
   const addNewItem = item => dispatch(addItem(item))
